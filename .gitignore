@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+.venv/
+env/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# GUI settings file (your tool)
+rhp_settings.json
+
+# Generated results
+results/
+*.csv
+*.png
+*.pdf
+
+# IDE files
+.vscode/
+.idea/

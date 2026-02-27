@@ -1,14 +1,24 @@
 # Coupled Thermo-Mechanical Simulation Model for Rotating Heat Pipes (RHP)
 
-This repository contains the complete Python implementation (~2200 lines)
-of the thermo-mechanical simulation model described in the associated research paper.
+This repository contains the complete Python implementation (~2200 lines) of a coupled thermo-mechanical simulation model for rotating heat pipes (RHP), developed within the context of an academic research project.
 
-The model includes:
-- Coupled thermo-mechanical pressure balance
-- Hybrid liquid transport model (Darcy + film flow)
-- Rossby-number based correction
-- Acceleration-dependent boiling suppression
-- Evaluation of performance limits (capillary, sonic, entrainment, boiling, viscous)
+The model combines thermo-mechanical pressure balance, hybrid liquid transport modeling, and performance limit evaluation to simulate rotating heat pipe behavior under varying operating conditions.
+
+---
+
+## Features
+
+- Coupled capillary–centrifugal pressure balance  
+- Hybrid liquid return model (Darcy wick flow + parallel film flow)  
+- Rossby-number-based viscosity correction  
+- Acceleration-dependent boiling suppression  
+- Performance limit evaluation:
+  - Capillary limit  
+  - Sonic limit  
+  - Entrainment limit  
+  - Viscous limit  
+  - Boiling limit  
+- Graphical User Interface (GUI)
 
 ---
 
@@ -16,7 +26,7 @@ The model includes:
 
 Tested with Python 3.11.
 
-Install required packages:
+Install required dependencies:
 
 ```bash
 pip install -r requirements.txt
@@ -26,33 +36,37 @@ pip install -r requirements.txt
 
 ## Running the Model
 
-If using the GUI:
-
+### German Version
 ```bash
 python rhp_model.py
 ```
 
-If using command line execution:
-
+### English Version
 ```bash
-python run_model.py --fluid Water --rpm 20000 --tempC 100
+python rhp_model_en.py
 ```
 
 ---
 
 ## Reproducibility
 
-The version corresponding to the results presented in the paper is tagged as:
+The version corresponding to the results presented in the associated thesis/paper is archived and identified by the tag:
 
-```
-v1.0-paper
-```
+`v1.0-paper`
+
+This tagged version ensures full traceability and reproducibility of the reported numerical results.
 
 ---
 
-## Author
+## Repository Structure
 
-GitHub: https://github.com/gaji1901
+```
+rhp_model.py        # German version
+rhp_model_en.py     # English version
+requirements.txt    # Python dependencies
+.gitignore          # Ignored files
+README.md
+```
 
 ---
 

@@ -56,6 +56,3 @@ GitHub: https://github.com/gaji1901
 
 ---
 
-## License
-
-See LICENSE file.
